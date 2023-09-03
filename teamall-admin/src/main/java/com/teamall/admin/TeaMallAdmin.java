@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author DengQiao
  * @date 2023-9-2 0002
  */
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"com.teamall.admin","com.teamall.common"})
 public class TeaMallAdmin {
     public static void main(String[] args) {
         SpringApplication.run(TeaMallAdmin.class,args);
