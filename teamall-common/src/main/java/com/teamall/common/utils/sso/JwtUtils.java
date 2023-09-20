@@ -17,7 +17,7 @@ public class JwtUtils {
     public static String generatorToken(Map<String,Object> map){
         return Jwts.builder()
                 .setClaims(map)
-                .setExpiration(new Date(System.currentTimeMillis()+30*60*1000))
+                .setExpiration(new Date(System.currentTimeMillis()+24*60*60*1000))
                 .setIssuedAt(new Date())
                 .signWith(SignatureAlgorithm.HS256,secret)
                 .compact();//签约,创建token
