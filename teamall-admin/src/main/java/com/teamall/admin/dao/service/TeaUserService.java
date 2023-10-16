@@ -1,4 +1,4 @@
-package com.teamall.admin.service;
+package com.teamall.admin.dao.service;
 
 
 import com.baomidou.mybatisplus.extension.service.IService;

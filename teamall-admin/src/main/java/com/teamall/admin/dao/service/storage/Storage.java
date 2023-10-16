@@ -1,4 +1,4 @@
-package com.teamall.admin.service.storage;
+package com.teamall.admin.dao.service.storage;
 
 import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Component;

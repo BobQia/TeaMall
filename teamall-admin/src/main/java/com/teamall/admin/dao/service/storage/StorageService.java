@@ -1,7 +1,7 @@
-package com.teamall.admin.service.storage;
+package com.teamall.admin.dao.service.storage;
 
 import com.teamall.admin.domain.TeaStorage;
-import com.teamall.admin.service.DtsStorageService;
+import com.teamall.admin.dao.service.DtsStorageService;
 import com.teamall.common.utils.CharUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

@@ -1,4 +1,4 @@
-package com.teamall.admin.mapper;
+package com.teamall.admin.dao.mapper;
 
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;

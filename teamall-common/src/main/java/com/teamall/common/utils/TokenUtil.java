@@ -1,5 +1,6 @@
 package com.teamall.common.utils;
 
+import com.teamall.common.utils.sso.JwtUtils;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
@@ -19,4 +20,7 @@ public class TokenUtil {
         return getHttpServletRequest().getHeader("token");
     }
 
+    public static String getCurrentToken() {
+        return JwtUtils.getUserName(getToken());
+    }
 }

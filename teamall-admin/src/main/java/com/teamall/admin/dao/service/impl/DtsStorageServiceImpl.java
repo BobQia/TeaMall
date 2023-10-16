@@ -1,9 +1,9 @@
-package com.teamall.admin.service.impl;
+package com.teamall.admin.dao.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.teamall.admin.dao.mapper.DtsStorageMapper;
+import com.teamall.admin.dao.service.DtsStorageService;
 import com.teamall.admin.domain.TeaStorage;
-import com.teamall.admin.service.DtsStorageService;
-import com.teamall.admin.mapper.DtsStorageMapper;
 import org.springframework.stereotype.Service;
 
 /**
@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 */
 @Service
 public class DtsStorageServiceImpl extends ServiceImpl<DtsStorageMapper, TeaStorage>
-    implements DtsStorageService{
+    implements DtsStorageService {
 
     @Override
     public TeaStorage findByKey(String key) {

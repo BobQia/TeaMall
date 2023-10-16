@@ -7,7 +7,7 @@ import com.teamall.common.core.domain.enums.RespBeanEnum;
 import com.teamall.common.core.domain.page.PageDomain;
 import com.teamall.common.core.domain.page.TableDataInfo;
 import com.teamall.common.core.domain.page.TableSupport;
-import com.teamall.common.domain.vo.response.RespBean;
+import com.teamall.common.domain.response.RespBean;
 import com.teamall.common.utils.PageUtils;
 import com.teamall.common.utils.ServletUtils;
 import com.teamall.common.utils.SqlUtil;

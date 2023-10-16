@@ -1,8 +1,8 @@
 package com.teamall.admin.controller;
 
-import com.teamall.admin.service.storage.StorageService;
+import com.teamall.admin.dao.service.storage.StorageService;
 import com.teamall.common.core.controller.BaseController;
-import com.teamall.common.domain.vo.response.RespBean;
+import com.teamall.common.domain.response.RespBean;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
@@ -14,8 +14,6 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * @author DengQiao

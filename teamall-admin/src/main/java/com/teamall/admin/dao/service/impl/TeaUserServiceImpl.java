@@ -1,9 +1,9 @@
-package com.teamall.admin.service.impl;
+package com.teamall.admin.dao.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.teamall.admin.dao.mapper.TeaUserMapper;
+import com.teamall.admin.dao.service.TeaUserService;
 import com.teamall.admin.domain.TeaUser;
-import com.teamall.admin.mapper.TeaUserMapper;
-import com.teamall.admin.service.TeaUserService;
 import org.springframework.stereotype.Service;
 
 /**

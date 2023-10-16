@@ -1,8 +1,10 @@
 package com.teamall.common.utils.sso;
 
 import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.Jws;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
+import org.springframework.util.StringUtils;
 
 import java.util.Date;
 import java.util.Map;
@@ -31,4 +33,16 @@ public class JwtUtils {
         Date expiration=getClaimsFromToken(token).getExpiration();
         return expiration.before(new Date());
     }
+
+    //根据token字符串得到用户名称
+    public static String getUserName(String token) {
+        if(StringUtils.hasLength(token)) {
+            return "";
+        }
+
+        Jws<Claims> claimsJws = Jwts.parser().setSigningKey(secret).parseClaimsJws(token);
+        Claims claims = claimsJws.getBody();
+        return (String)claims.get("userName");
+    }
+
 }

@@ -1,4 +1,4 @@
-package com.teamall.admin.service;
+package com.teamall.admin.dao.service;
 
 import com.teamall.admin.domain.TeaUser;
 import org.springframework.beans.factory.annotation.Autowired;

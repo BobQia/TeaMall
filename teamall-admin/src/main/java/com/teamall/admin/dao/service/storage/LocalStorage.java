@@ -1,4 +1,4 @@
-package com.teamall.admin.service.storage;
+package com.teamall.admin.dao.service.storage;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.Resource;
@@ -101,7 +101,7 @@ public class LocalStorage implements Storage {
 
 	@Override
 	public String generateUrl(String keyName) {
-		String url = address + keyName;
+		String url = address + "/"+keyName;
 		return url;
 	}
 }

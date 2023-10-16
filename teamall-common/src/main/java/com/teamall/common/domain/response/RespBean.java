@@ -1,4 +1,4 @@
-package com.teamall.common.domain.vo.response;
+package com.teamall.common.domain.response;
 
 import com.teamall.common.core.domain.enums.RespBeanEnum;
 import io.swagger.annotations.ApiModel;
